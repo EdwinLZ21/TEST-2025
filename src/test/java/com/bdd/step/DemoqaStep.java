@@ -2,7 +2,6 @@ package com.bdd.step;
 
 import com.bdd.pages.DemoqaPage;
 import net.thucydides.core.annotations.Step;
-import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.steps.ScenarioSteps;
 
 public class DemoqaStep extends ScenarioSteps {
@@ -14,13 +13,18 @@ public class DemoqaStep extends ScenarioSteps {
         demoqaPage.Abrir_la_pagina_DemoQA_en_el_navegador_chrome();
     }
 
-  
-    public void hacerClickEnLaOpcionPracticeForm() {
-    }
-
-    public void validarQueSeVisualiceUnFormulario() {
-    }
-
+    @Step
     public void hacerClickEnElBotonForm() {
+        demoqaPage.hacerClickEnElBotonForm();
+    }
+
+    @Step
+    public void hacerClickEnLaOpcionPracticeForm() {
+        demoqaPage.hacerClickEnLaOpcionPracticeForm();
+    }
+
+    @Step
+    public void validarQueSeVisualiceUnFormulario() {
+        demoqaPage.validarQueSeVisualiceUnFormulario();
     }
 }
